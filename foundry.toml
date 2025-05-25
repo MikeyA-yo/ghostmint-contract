@@ -7,9 +7,13 @@ remappings = [
   "forge-std/=lib/forge-std/src/",
   "@openzeppelin/=lib/openzeppelin-contracts/"
 ]
+optimizer = true
+optimizer_runs = 200
+libraries = ["lib/EncryptedERC/contracts/libraries/BabyJubJub.sol:BabyJubJub:0x8cB0163eD1170f8df0A87f6dC8952d37fC0A4F8C"]
 
 [rpc_endpoints]
 fuji = "https://api.avax-test.network/ext/bc/C/rpc"
 mainnet = "https://api.avax.network/ext/bc/C/rpc"
+
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
